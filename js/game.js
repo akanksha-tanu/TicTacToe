@@ -29,7 +29,11 @@ function handleCellClick() {
 
 }
 function handleRestartGame() {
-
+    gameActive=true;
+    currentPlayer="X";
+    state=[0,0,0,0,0,0,0,0,0];
+    status.innerHTML=currentPlayerTurn();
+    cells.forEach(cell=>cell.innerHTML="");
 }
 
 cells.forEach(cell=>cell.addEventListener('click',handleCellClick));
