@@ -8,6 +8,8 @@
 #title{
     height: 20%;
     display:block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:0px 0px 4px #666464;
 }
 .container{
     margin:30px 0;
@@ -55,7 +57,7 @@
 
 .game-status{
     /* border:1px solid black; */
-    width:30%;
+    width:40%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     /* padding:2%; */
@@ -87,7 +89,7 @@
         width:32.0%;
     }
     #title{
-        font-size:x-small;
+        font-size:medium;
     }
     .game-status{
         font-size: small;
