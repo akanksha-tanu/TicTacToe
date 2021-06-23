@@ -10,7 +10,7 @@
     display:block;
 }
 .container{
-    margin:40px 0;
+    margin:30px 0;
     height:400px;
     width:400px;
     /* border:1px solid black; */
@@ -36,34 +36,10 @@
           box-shadow: inset 0px 0px 5px #c1c1c1; */
    outline: none;
 }
-@media only screen and (max-width: 700px) {
-    .container {
-        height:300px;
-        width:300px;
-    }
-    .cell{
-        height:32.4%;
-        width:32.4%;
-    }
-  }
-@media only screen and (max-width: 400px) {
-    .container {
-        margin-top: 25px;;
-        height:200px;
-        width:200px;
-    }
-    .cell{
-        height:32.0%;
-        width:32.0%;
-    }
-    #title{
-        font-size:x-small;
-    }
-  }
 
 .game-restart{
       border:1px solid black;
-      padding:1%;
+      padding:0.8% 1%;
       border-radius: 5%;
       background-color: rgb(0,0,0);
       color:#e5e5e5;
@@ -78,7 +54,39 @@
 }
 
 .game-status{
-    border:1px solid black;
+    /* border:1px solid black; */
     width:30%;
-    padding:2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    /* padding:2%; */
 }
+
+
+
+@media only screen and (max-width: 700px) {
+    .container {
+        height:300px;
+        width:300px;
+    }
+    .cell{
+        height:32.4%;
+        width:32.4%;
+    }
+    .game-restart{
+        padding:1.5%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .container {
+        margin-top: 25px;;
+        height:200px;
+        width:200px;
+    }
+    .cell{
+        height:32.0%;
+        width:32.0%;
+    }
+    #title{
+        font-size:x-small;
+    }
+  }
