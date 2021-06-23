@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#b1eb2b ,#23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#8db925 ,#23d5ab);
  background-size: 400% 400%;
  -webkit-animation: gradientBG 50s ease infinite;
          animation: gradientBG 50s ease infinite;
@@ -114,8 +114,8 @@ body{
         width:200px;
     }
     .cell{
-        height:32.0%;
-        width:32.0%;
+        height:31.5%;
+        width:31.5%;
     }
     #title{
         margin-top:10px;
