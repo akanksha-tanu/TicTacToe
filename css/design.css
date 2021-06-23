@@ -11,26 +11,39 @@
 }
 .container{
     margin:10px 0;
-    height:500px;
-    width:500px;
-    border:1px solid black;
+    height:400px;
+    width:400px;
+    /* border:1px solid black; */
     display:block;
 }
+.cell:hover{
+    box-shadow: 0px 0px 4px rgb(0,0,0);
+}
 .cell{
-    border:1px solid red;
-    height:32.45%;
-    width:32.35%;
-    position:relative;
-    display: inline-block;
+    display:inline-flex;
+    justify-content: space-between;
+    height:32.5%;
+    width:32.6%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 10px rgb(0,0,0);
+    /* border:1px solid red; */
+    /* position:relative; */
+    /* display: inline-block; */
+
+    background: #e5e5e5;
+  /* -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1; */
+   outline: none;
 }
 @media only screen and (max-width: 700px) {
     .container {
-        height:400px;
-        width:400px;
+        height:300px;
+        width:300px;
     }
     .cell{
-        height:32.15%;
-        width:32.15%;
+        height:32.4%;
+        width:32.4%;
     }
   }
 @media only screen and (max-width: 400px) {
@@ -40,8 +53,8 @@
         width:200px;
     }
     .cell{
-        height:31%;
-        width:31%;
+        height:32.0%;
+        width:32.0%;
     }
     #title{
         font-size:x-small;
