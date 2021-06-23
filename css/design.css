@@ -89,9 +89,10 @@
         width:32.0%;
     }
     #title{
+        margin-top:10px;
         font-size:medium;
     }
     .game-status{
-        font-size: small;
+        font-size: medium;
     }
   }
