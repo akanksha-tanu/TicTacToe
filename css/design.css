@@ -126,8 +126,9 @@ body{
         font-size: medium;
     }
   }
-.symbol{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.win{
+    background-color: #39f788;
+}
+.draw{
+    background-color: #fa817d;
 }

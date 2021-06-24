@@ -48,10 +48,10 @@ function handlePlayerChange() {
 }
 
 function handleResultValidation() {
-
+    let win;
     let won=false;
     for(let i=0;i<8;i++){
-        const win=winning[i];
+        win=winning[i];
         // console.log(win)
         let first=state[win[0]];
         let second=state[win[1]];
@@ -66,6 +66,9 @@ function handleResultValidation() {
     if(won){
         status.innerHTML=winningMessage();
         gameActive=false;
+        win.forEach(x=>{
+            cells[x].classList.toggle("win");
+        })
         return;
     }
     else{
@@ -73,6 +76,10 @@ function handleResultValidation() {
         if(draw){
             status.innerHTML=drawMessage();
             gameActive=false;
+            cells.forEach(cell=>{
+                cell.classList.add("draw");
+            })
+
             return;
         }
     }
@@ -104,7 +111,11 @@ function handleRestartGame() {
     currentPlayer="X";
     state=["","","","","","","","",""];
     status.innerHTML=currentPlayerTurn();
-    cells.forEach(cell=>cell.innerHTML="");
+    cells.forEach(cell=>{
+        cell.innerHTML="";
+        cell.classList.remove("win");
+        cell.classList.remove("draw");
+    });
 }
 
 
