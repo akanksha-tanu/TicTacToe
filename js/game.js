@@ -34,7 +34,7 @@ function handleCellPlayed(cell,cellId) {
         cell.innerHTML="<img src='https://www.freeiconspng.com/uploads/black-x-png-27.png'>";
 //         cell.innerHTML="<img src='../css/x.png'>";
     else
-        cell.innerHTML="<img src='http://www.pngall.com/wp-content/uploads/2/O-Letter-PNG-Pic.png'>";
+        cell.innerHTML="<img src='https://www.freeiconspng.com/uploads/letter-o-icon-png-12.png'>";
 //         cell.innerHTML="<img src='http://pngimg.com/uploads/letter_o/letter_o_PNG117.png'>";
 //         cell.innerHTML="<img src='../css/o.png'>";
 
