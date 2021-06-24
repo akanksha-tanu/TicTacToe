@@ -34,7 +34,7 @@ function handleCellPlayed(cell,cellId) {
         cell.innerHTML="<img src='../css/x.png'>";
     else
         cell.innerHTML="<img src='http://pngimg.com/uploads/letter_o/letter_o_PNG117.png'>";
-//         cell.innerHTML="<img src='../css/o.png'>";
+
 }
 
 function handlePlayerChange() {
