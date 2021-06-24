@@ -31,9 +31,11 @@ function handleCellPlayed(cell,cellId) {
     state[cellId]=currentPlayer;
     // cell.innerHTML=`<h1>${currentPlayer}</h1>`;
     if(currentPlayer=="X")
-        cell.innerHTML="<img src='../css/x.png'>";
+        cell.innerHTML="<img src='https://p.kindpng.com/picc/s/166-1660600_transparent-pirate-png-pirate-x-marks-the-spot.png'>";
+//         cell.innerHTML="<img src='../css/x.png'>";
     else
-        cell.innerHTML="<img src='../css/o.png'>";
+        cell.innerHTML="<img src='http://pngimg.com/uploads/letter_o/letter_o_PNG117.png'>";
+//         cell.innerHTML="<img src='../css/o.png'>";
 
 }
 
