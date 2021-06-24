@@ -57,6 +57,7 @@ body{
     width:32.6%;
     border-radius: 10%;
     box-shadow: 5px 5px 10px rgb(0,0,0);
+    text-align: center;
     /* border:1px solid red; */
     /* position:relative; */
     /* display: inline-block; */
@@ -125,3 +126,8 @@ body{
         font-size: medium;
     }
   }
+.symbol{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
