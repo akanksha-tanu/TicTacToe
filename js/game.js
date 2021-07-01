@@ -1,3 +1,19 @@
+// animation
+let div1=document.querySelector(".graphics");
+let div2=document.querySelector(".game");
+// div2.style.display="none";
+setTimeout(()=>{
+    div1.classList.add("fadeout");
+    div1.style.display="none";
+    div2.classList.add("fadein");
+    div2.style.display="flex";
+},2500);
+// 
+
+
+
+
+
 let cells=document.querySelectorAll(".cell")
 let status=document.querySelector(".game-status")
 let restart=document.querySelector('.game-restart')

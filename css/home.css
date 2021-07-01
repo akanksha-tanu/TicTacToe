@@ -1,0 +1,194 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#top{
+    padding-top: 100px;
+    margin:auto;
+    text-align: center;
+    width:80%;
+    font-size: 20px;
+    height: 20%;
+    
+    font-family: 'Lobster', serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    text-shadow:0px 0px 2px #666464;
+  }
+  hr{
+      width:60%;
+  }
+
+  /* animation for cross */
+
+  .cross {
+    margin-left: 50vw;
+  width: 100px;
+  height: 100px;
+  /* background: red; */
+  position: relative;
+  animation: mymove 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 100px; background-color:none;}
+  /* to {top: 200px; background-color: blue;} */
+}
+  
+
+
+.circle {
+    margin-right:10px;
+    margin-top: 110px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: red;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(25px 25px, circle, rgb(65, 63, 63), #000);
+    background: -moz-radial-gradient(25px 25px, circle, rgb(41, 40, 40), #000);
+    background: radial-gradient(25px 25px, circle, rgb(41, 40, 40), #000);
+   
+    /* Animation to spin and move the sphere */
+    -webkit-animation: spin 1000ms linear , moveLeftToRight 2s linear ;
+    -moz-animation: spin 1000ms linear , moveLeftToRight 2s linear ;
+    -ms-animation: spin 1000ms linear , moveLeftToRight 2s linear ;
+    animation: spin 1000ms linear , moveLeftToRight 2s linear ;
+    
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    animation-fill-mode: forwards;
+    
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Spinning the sphere using key frames */
+  @-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+  }
+  @-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+  }
+  
+  /* Move sphere from left to right */
+  @-moz-keyframes moveLeftToRight {
+        0%   { left: 200px; }
+        100% { left: 44%; }
+      }
+      @-ms-keyframes moveLeftToRight {
+        0%   { left: 200px; }
+        100% { left: 44%; }
+      }
+      @keyframes moveLeftToRight {
+        0%   { left: 200px; }
+        100% { left: 44%; }
+      }
+      @-webkit-keyframes moveLeftToRight {
+        0%   { left: 200px; }
+        100% { left: 44%; }
+      }
+
+@media only screen and (max-width:1050px){
+    @-moz-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 40%; }
+      }
+      @-ms-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 40%; }
+      }
+      @keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 40%; }
+      }
+      @-webkit-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 40%; }
+      }
+    
+}
+@media only screen and (max-width:600px){
+    @-moz-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 35vw; }
+      }
+      @-ms-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 35vw; }
+      }
+      @keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 35vw; }
+      }
+      @-webkit-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 35vw; }
+      }
+    
+      #title{
+        margin-top:10px;
+        font-size:medium;
+    }
+}
+@media only screen and (max-width:450px){
+    @-moz-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 25vw; }
+      }
+      @-ms-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 25vw; }
+      }
+      @keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 25vw; }
+      }
+      @-webkit-keyframes moveLeftToRight {
+        0%   { left: 0px; }
+        100% { left: 25vw; }
+      }
+
+      .cross {
+        margin-left: 45vw;
+      }
+    
+      #title{
+        margin-top:50px;
+        font-size:medium;
+    }
+}
+  
+
+
+
+.fadein{
+    opacity: 1;
+    animation: fadein 1s linear;
+    animation-fill-mode: forwards;
+}
+.fadeout{
+    opacity: 1;
+    animation: fadeout 2s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
