@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 body{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#8db925 ,#23d5ab);
  background-size: 400% 400%;
@@ -35,10 +37,12 @@ body{
     flex-direction: column;
 }
 #title{
+    font-size: large;
     height: 20%;
     display:block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow:0px 0px 4px #666464;
+    font-family: 'Lobster', serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    text-shadow:0px 0px 2px #666464;
 }
 .container{
     margin:30px 0;
